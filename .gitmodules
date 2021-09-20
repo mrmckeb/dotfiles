@@ -1,0 +1,16 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh
+  ignore = dirty
+[submodule "pure"]
+	path = pure
+	url = https://github.com/sindresorhus/pure
+  ignore = dirty
+[submodule "nvm"]
+	path = nvm
+	url = https://github.com/nvm-sh/nvm
+  ignore = dirty

@@ -1,0 +1,17 @@
+- clean: ["~"]
+
+- create:
+    - ~/.zsh
+
+- link:
+    # ZSH settings.
+    ~/.zshrc: zshrc
+    ~/.oh-my-zsh: oh-my-zsh/
+    ~/.zsh/pure: pure/
+    # Node.js related tools.
+    ~/.nvm: nvm
+
+- shell:
+    - [git submodule update --init --recursive, Installing Git submodules]
+    # Don't link .gitconfig as it contains private information.
+    - [test -e ~/.gitconfig || cp gitconfig ~/.gitconfig, Generating .gitconfig]
