@@ -8,6 +8,12 @@ DOTBOT_DIR="dotbot"
 DOTBOT_BIN="bin/dotbot"
 BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+if [ ! -z "$CODESPACES" ]; then
+  echo "Detected GitHub Codespaces"
+  echo "Removing conflicting files"
+  sudo rm -rf ~/.zshrc ~/.oh-my-zsh
+fi
+
 cd "${BASEDIR}"
 git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
