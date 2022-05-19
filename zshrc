@@ -105,11 +105,8 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 
-# npm - https://docs.npmjs.com/cli/v7/commands/npm-completion
-source <(npm completion)
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # fnm
 export PATH=/Users/mrmckeb/.fnm:$PATH
-eval "`fnm env`"
+eval "$(fnm env --use-on-cd)"
