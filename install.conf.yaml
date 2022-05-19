@@ -9,7 +9,9 @@
     ~/.oh-my-zsh: oh-my-zsh/
     ~/.zsh/pure: pure/
     # Node.js related tools.
-    ~/.nvm: nvm
+    ~/.nvm:
+      path: nvm
+      if: '[ -z "$CODESPACES" ]'
 
 - shell:
     - [git submodule update --init --recursive, Installing Git submodules]
