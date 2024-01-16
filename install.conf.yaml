@@ -4,7 +4,9 @@
     - ~/.zsh
 
 - link:
-    # ZSH settings.
+    ~/.bashrc:
+      force: true
+      path: bashrc
     ~/.zshrc:
       force: true
       path: zshrc
