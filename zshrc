@@ -1,3 +1,6 @@
+# Enable fnm - https://github.com/Schniz/fnm
+export PATH=/Users/mrmckeb/.fnm:$PATH
+
 # Path to the oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 

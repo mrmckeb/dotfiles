@@ -4,9 +4,6 @@
     - ~/.zsh
 
 - link:
-    ~/.bashrc:
-      force: true
-      path: bashrc
     ~/.zshrc:
       force: true
       path: zshrc
