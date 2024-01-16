@@ -10,7 +10,3 @@
 	path = pure
 	url = https://github.com/sindresorhus/pure
   ignore = dirty
-[submodule "nvm"]
-	path = nvm
-	url = https://github.com/nvm-sh/nvm
-  ignore = dirty
