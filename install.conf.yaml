@@ -5,11 +5,17 @@
 
 - link:
     # ZSH settings.
-    ~/.zshrc: zshrc
-    ~/.oh-my-zsh: oh-my-zsh/
-    ~/.zsh/pure: pure/
+    ~/.zshrc:
+      force: true
+      path: zshrc
+    ~/.oh-my-zsh/:
+      force: true
+      path: oh-my-zsh/
+    ~/.zsh/pure/:
+      force: true
+      path: pure/
 
 - shell:
     - [git submodule update --init --recursive, Installing Git submodules]
-    # Don't link .gitconfig as it contains private information.
+    # Don't link .gitconfig as it contains confidential information.
     - [test -e ~/.gitconfig || cp gitconfig ~/.gitconfig, Generating .gitconfig]
