@@ -10,6 +10,9 @@ plugins=(git)
 # Set source.
 source $ZSH/oh-my-zsh.sh
 
+# Enable Homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # Enable Pure - https://github.com/sindresorhus/pure
 fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
